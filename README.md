@@ -26,3 +26,10 @@ python3 database.py
 
 ## Disclaimer
 This tool is built for defensive research purpose only. All URLs are sourced from public threat intelligence feeds.
+
+## Author
+**Giannis Kinalis**
+*Cybersecurity Enthusiast*
+
+- **GitHub:** [gianniskinalis](https://github.com/gianniskinalis)
+- **LinkedIn:** [Ioannis Kinalis](https://linkedin.com/ioannis-kinalis)
