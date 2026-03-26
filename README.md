@@ -32,4 +32,4 @@ This tool is built for defensive research purpose only. All URLs are sourced fro
 *Cybersecurity Enthusiast*
 
 - **GitHub:** [gianniskinalis](https://github.com/gianniskinalis)
-- **LinkedIn:** [Ioannis Kinalis](https://linkedin.com/ioannis-kinalis)
+- **LinkedIn:** [Ioannis Kinalis](https://linkedin.com/in/ioannis-kinalis)
