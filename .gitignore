@@ -1,0 +1,8 @@
+```
+venv/
+data/
+phish.db
+urls.txt
+results.txt
+__pycache__/
+*.pyc
