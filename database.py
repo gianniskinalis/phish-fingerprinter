@@ -79,7 +79,7 @@ def show_families():
     rows = c.fetchall()
     conn.close()
 
-    print(f"\n[+] Kit families in database\n")
+    print("\n[+] Kit families in database\n")
     for row in rows:
         print(f"  {row[0]} - {row[1]} page(s)")
 
@@ -88,4 +88,3 @@ if __name__ == "__main__":
     init_db()
     show_all()
     show_families()
-

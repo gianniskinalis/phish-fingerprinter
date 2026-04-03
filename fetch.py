@@ -26,7 +26,7 @@ for url in urls:
             f.write(response.text)
 
         print(f"[+] {url} - {response.status_code} - "
-f"{len(response.text)} chars - saved to {filepath}")
+	      f"{len(response.text)} chars - saved to {filepath}")
 
     except Exception as e:
         print(f"[-] {url} - Error: {e}")
