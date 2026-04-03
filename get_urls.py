@@ -21,4 +21,3 @@ def get_phishing_urls(limit=5):
 
 
 get_phishing_urls()
-

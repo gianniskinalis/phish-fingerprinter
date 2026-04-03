@@ -1,4 +1,3 @@
-
 import os
 import hashlib
 import re
@@ -44,4 +43,3 @@ for filename in os.listdir(data_folder):
         print(f"  SHA256:  {features['sha256']}")
         print(f"  Forms:  {features['forms']}")
         print(f"  Emails:  {features['emails']}")
-

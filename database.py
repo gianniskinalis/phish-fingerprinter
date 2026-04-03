@@ -1,4 +1,4 @@
-Should i do this for all other projects?import sqlite3
+import sqlite3
 import json
 from datetime import datetime
 

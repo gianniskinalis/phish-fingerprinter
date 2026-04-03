@@ -98,4 +98,3 @@ for i, cluster in enumerate(clusters):
     print()
 
 print("[+] Results saved to database")
-
