@@ -3,6 +3,7 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+
 def get_phishing_urls(limit=5):
     url = "https://openphish.com/feed.txt"
 
@@ -18,4 +19,6 @@ def get_phishing_urls(limit=5):
     for u in urls:
         print(f"  {u}")
 
+
 get_phishing_urls()
+

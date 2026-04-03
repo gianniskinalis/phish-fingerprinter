@@ -7,13 +7,16 @@ from database import init_db, save_page
 
 data_folder = "data"
 
+
 def get_structure(html):
     soup = BeautifulSoup(html, "html.parser")
     tags = [tag.name for tag in soup.find_all()]
     return " ".join(tags)
 
+
 def similarity(a, b):
     return round(SequenceMatcher(None, a, b).ratio(), 2)
+
 
 def extract_features(filepath):
     with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
@@ -35,6 +38,7 @@ def extract_features(filepath):
         "html": html,
         "structure": get_structure(html)
     }
+
 
 pages = []
 for filename in os.listdir(data_folder):
@@ -94,3 +98,4 @@ for i, cluster in enumerate(clusters):
     print()
 
 print("[+] Results saved to database")
+

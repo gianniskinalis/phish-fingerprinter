@@ -1,8 +1,9 @@
-import sqlite3
+Should i do this for all other projects?import sqlite3
 import json
 from datetime import datetime
 
 DB_FILE = "phish.db"
+
 
 def init_db():
     conn = sqlite3.connect(DB_FILE)
@@ -22,6 +23,7 @@ def init_db():
     conn.commit()
     conn.close()
     print("[+] Database initialized")
+
 
 def save_page(url, title, sha256, forms, emails, kit_family):
     conn = sqlite3.connect(DB_FILE)
@@ -49,14 +51,15 @@ def save_page(url, title, sha256, forms, emails, kit_family):
     conn.commit()
     conn.close()
 
+
 def show_all():
     conn = sqlite3.connect(DB_FILE)
-    c= conn.cursor()
+    c = conn.cursor()
     c.execute("SELECT * FROM pages")
     rows = c.fetchall()
     conn.close()
 
-    print(f"\n[+] {len(rows)} pages in database\n")
+    print("\n[+] {len(rows)} pages in database\n")
     for row in rows:
         print(f"  ID:  {row[0]}")
         print(f"  URL:  {row[1]}")
@@ -67,6 +70,7 @@ def show_all():
         print(f"  Kit Family:  {row[6]}")
         print(f"  Collected: {row[7]}")
         print()
+
 
 def show_families():
     conn = sqlite3.connect(DB_FILE)
@@ -79,7 +83,9 @@ def show_families():
     for row in rows:
         print(f"  {row[0]} - {row[1]} page(s)")
 
+
 if __name__ == "__main__":
     init_db()
     show_all()
     show_families()
+

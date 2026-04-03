@@ -1,9 +1,11 @@
+
 import os
 import hashlib
 import re
 from bs4 import BeautifulSoup
 
 data_folder = "data"
+
 
 def extract_features(filepath):
     with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
@@ -29,7 +31,8 @@ def extract_features(filepath):
         "sha256": sha256,
         "forms": forms,
         "emails": emails
-    }   
+    }
+
 
 for filename in os.listdir(data_folder):
     if filename.endswith(".html"):
@@ -41,3 +44,4 @@ for filename in os.listdir(data_folder):
         print(f"  SHA256:  {features['sha256']}")
         print(f"  Forms:  {features['forms']}")
         print(f"  Emails:  {features['emails']}")
+
