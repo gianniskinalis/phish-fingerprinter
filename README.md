@@ -24,6 +24,22 @@ python3 fetch.py
 python3 similarity.py
 python3 database.py
 
+## Docker
+
+You can run this tool inside a Docker container without installing any dependencies locally.
+
+**Build the image:**
+```bash
+docker build -t phish-fingerprinter .
+```
+
+**Run the container:**
+```bash
+docker run -v $(pwd)/urls.txt:/app/urls.txt phish-fingerprinter
+```
+
+> Make sure `urls.txt` exists in your current directory before running. You can generate it with `python3 get_urls.py`.
+
 ## Disclaimer
 This tool is built for defensive research purpose only. All URLs are sourced from public threat intelligence feeds.
 
